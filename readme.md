@@ -1,8 +1,7 @@
 тестовое задание для Itera от Николая Сухарева от 25.04.2018
 ================
 
-Для запска заданой функции  
-подключите библиотеку test_table_libruary.php в функцию merge_cells_in_table() передайте массив с параметрами оговренными в тестовом задании.  
+Для запска заданой функции подключите библиотеку test_table_libruary.php в функцию merge_cells_in_table() передайте массив с параметрами оговренными в тестовом задании.  
 Это реализовано в файле index.php:  
 подключен файл с начальными установками config.php подключена библиотека test_table_libruary.php в функцию merge_cells_in_table() передан массив описанный в примере к тестовому заданию.
 
@@ -29,15 +28,13 @@ index.php
 test_table_libruary.php
 ----------------------
 
-### функция merge_cells_in_table(array $start_array)
-
+### функция merge_cells_in_table(array $start_array)  
 на основании переданного массива $start_array на HTML странице генерируется таблица размером 3х3,
 в которой текст занимает соответствующие позиции с соответствующим вырыванием и цветом фона  
 array $start_array -- исходный массив;
----
+
 
 ### функция empty_cells_array(int $rows_in_tab, int $cols_in_tab)
-
 возвращает массив $cells_array вида
     <pre>
     array(
@@ -70,7 +67,7 @@ $start_array -- исходный массив;
 $chells_array -- массив для внесения данных;
 $rows_in_tab --  количество строк в заданой таблице;
 $cols_in_tab -- количество столбцов в заданной таблицей;
----
+
 
 
 ###функция horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)
@@ -79,7 +76,7 @@ $cols_in_tab -- количество столбцов в заданной таб
 $chells_array -- массив для внесения данных;
 $rows_in_tab --  количество строк в заданой таблице;
 $cols_in_tab -- количество столбцов в заданной таблицей;
----
+
 
 
 ###функция horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)
@@ -88,7 +85,7 @@ $cols_in_tab -- количество столбцов в заданной таб
 $chells_array -- массив для внесения изменений;
 $rows_in_tab --  количество строк в заданой таблице;
 $cols_in_tab -- количество столбцов в заданной таблицей;
----
+
 
 
 ###функция vertical_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab){
@@ -97,7 +94,7 @@ $cols_in_tab -- количество столбцов в заданной таб
 $chells_array -- массив для внесения изменений;
 $rows_in_tab --  количество строк в заданой таблице;
 $cols_in_tab -- количество столбцов в заданной таблицей;
----
+
 
 
 ###функция output_table(array $cells_array, int $rows_in_tab, int $cols_in_tab)
@@ -106,4 +103,3 @@ $cols_in_tab -- количество столбцов в заданной таб
 $chells_array -- массив с данными подготовленными для вывода;
 $rows_in_tab --  количество строк в заданой таблице;
 $cols_in_tab -- количество столбцов в заданной таблицей;
----
