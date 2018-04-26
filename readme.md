@@ -28,14 +28,14 @@ index.php
 test_table_libruary.php
 ----------------------
 
-### функция merge_cells_in_table(array $start_array)  
+### функция `merge_cells_in_table(array $start_array)`  
 на основании переданного массива $start_array на HTML странице генерируется таблица размером 3х3,
 в которой текст занимает соответствующие позиции с соответствующим вырыванием и цветом фона  
-array $start_array -- исходный массив;
+`array $start_array` -- исходный массив;
 
 
-### функция empty_cells_array(int $rows_in_tab, int $cols_in_tab)
-возвращает массив $cells_array вида
+### функция `empty_cells_array(int $rows_in_tab, int $cols_in_tab)`
+возвращает массив `$cells_array` вида
     <pre>
     array(
       array('align' => '',
@@ -59,47 +59,40 @@ array $start_array -- исходный массив;
 
 
 
-функция start_arr_transfer(array $start_array, array $cells_array, int $rows_in_tab, int $cols_in_tab)
+### функция `start_arr_transfer(array $start_array, array $cells_array, int $rows_in_tab, int $cols_in_tab)`
 
-возвращает $cells_array в который переданны данные из массива $start_array соответственно числам в ячейке $start_array[]['cell']
+возвращает `$cells_array` в который переданны данные из массива $start_array соответственно числам в ячейке `$start_array[]['cell']`
 
-$start_array -- исходный массив;
-$chells_array -- массив для внесения данных;
-$rows_in_tab --  количество строк в заданой таблице;
-$cols_in_tab -- количество столбцов в заданной таблицей;
-
-
-
-###функция horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)
-возвращает $cells_array в котором подготовленный для объединение ячеек по горизонтали
-
-$chells_array -- массив для внесения данных;
-$rows_in_tab --  количество строк в заданой таблице;
-$cols_in_tab -- количество столбцов в заданной таблицей;
+`$start_array` - исходный массив;  
+`$chells_array` - массив для внесения данных;  
+`$rows_in_tab` -  количество строк в заданой таблице;  
+`$cols_in_tab` - количество столбцов в заданной таблицей;  
 
 
+### функция `horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)`
+возвращает `$cells_array` в котором подготовленный для объединение ячеек по горизонтали
 
-###функция horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)
-возвращает $cells_array подготовленный для объединение ячеек по горизонтали
+`$chells_array` - массив для внесения данных;  
+`$rows_in_tab` -  количество строк в заданой таблице;  
+`$cols_in_tab` - количество столбцов в заданной таблицей;  
 
-$chells_array -- массив для внесения изменений;
-$rows_in_tab --  количество строк в заданой таблице;
-$cols_in_tab -- количество столбцов в заданной таблицей;
+### функция `horizontal_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab)`
+возвращает `$cells_array` подготовленный для объединение ячеек по горизонтали
 
+`$chells_array` - массив для внесения изменений;  
+`$rows_in_tab` -  количество строк в заданой таблице;  
+`$cols_in_tab` - количество столбцов в заданной таблицей;  
 
+### функция `vertical_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab){`
+возвращает `$cells_array` подготовленный для объединение ячеек по верикали
 
-###функция vertical_merge(array $cells_array, int $rows_in_tab, int $cols_in_tab){
-возвращает $cells_array подготовленный для объединение ячеек по верикали
+`$chells_array` - массив для внесения изменений;
+`$rows_in_tab` -  количество строк в заданой таблице;
+`$cols_in_tab` - количество столбцов в заданной таблицей;
 
-$chells_array -- массив для внесения изменений;
-$rows_in_tab --  количество строк в заданой таблице;
-$cols_in_tab -- количество столбцов в заданной таблицей;
+### функция `output_table(array $cells_array, int $rows_in_tab, int $cols_in_tab)`
+формирует в браузере страницу с таблицей соответствующей заданным в `$cells_array` параметрами
 
-
-
-###функция output_table(array $cells_array, int $rows_in_tab, int $cols_in_tab)
-формирует в браузере страницу с таблицей соответствующей заданным в $cells_array параметрами
-
-$chells_array -- массив с данными подготовленными для вывода;
-$rows_in_tab --  количество строк в заданой таблице;
-$cols_in_tab -- количество столбцов в заданной таблицей;
+`$chells_array` - массив с данными подготовленными для вывода;
+`$rows_in_tab` -  количество строк в заданой таблице;
+`$cols_in_tab` - количество столбцов в заданной таблицей;
